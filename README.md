@@ -133,12 +133,3 @@ npm run client
 ### 4. `SystemSetting`
 - `key` (`overdueThresholdDays`), `value` (Number), `updatedAt`.
 
----
-
-## 📄 Deliverables Checklist
-- [x] Complete source code zip package
-- [x] Detailed `README.md` with setup guide & API docs
-- [x] System Design write-up (`SYSTEM_DESIGN.md`)
-- [x] Complaint lifecycle with complete audit trail
-- [x] Dynamic overdue calculation & threshold adjustment
-- [x] Cloudinary photo upload & Resend email integration
