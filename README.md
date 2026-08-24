@@ -2,6 +2,35 @@
 
 A production-quality, evaluation-friendly apartment society complaint management platform built with **React (Vite), Node.js, Express, MongoDB (Mongoose), JWT, Cloudinary, and Resend**.
 
+## Deployment Guide
+
+This repository is ready to be deployed instantly on Vercel and Render.
+
+### 1. Backend on Render.com
+Render uses the `render.yaml` blueprint included in the root to automate deployment.
+1. Sign in to [Render.com](https://render.com).
+2. Go to your Dashboard and click **New+ -> Blueprint**.
+3. Connect your GitHub account and select the `society-maintenance` repository.
+4. Render will automatically detect the settings and start building the API.
+5. In the Render Dashboard for your Web Service, set the following Environment Variables:
+   - `MONGODB_URI`: Your MongoDB connection string.
+   - `JWT_SECRET`: A secure random string for authentication.
+   - `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`: Your Cloudinary credentials.
+6. Once deployed, copy your Render URL (e.g., `https://society-maintenance-api.onrender.com`).
+
+### 2. Frontend on Vercel
+Vercel is optimized for Vite + React applications.
+1. Sign in to [Vercel.com](https://vercel.com).
+2. Click **Add New -> Project**.
+3. Import the `society-maintenance` repository from GitHub.
+4. Set the **Framework Preset** to `Vite`.
+5. Set the **Root Directory** to `client`.
+6. Add the following Environment Variable:
+   - `VITE_API_URL`: Your Render backend URL (e.g., `https://society-maintenance-api.onrender.com/api`).
+7. Click **Deploy**. Vercel will build your frontend and auto-configure React Router using the `vercel.json` file.
+
+You're done! Your full-stack Society Maintenance Tracker is live.
+
 ---
 
 ## 🔑 DEMO ACCESS FOR EVALUATORS
