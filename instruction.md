@@ -19,7 +19,7 @@ Technical Expectations:
 Deliverables: 
 1. Zip file with complete source code 
 2. README with setup guide, .env.example, API docs, and database schema 3. Hosted application URL (Vercel, Render, Railway, or similar) 
-4. System design write-up (800 words max) covering your complaint history model, overdue detection, photo handling, and notification flow 
+4. System design write-up covering your complaint history model, overdue detection, photo handling, and notification flow 
 Evaluation Focus: 
 • Complaint lifecycle and status history design
 • Overdue detection and priority handling • Photo upload and notice board design • Dashboard and reporting 
